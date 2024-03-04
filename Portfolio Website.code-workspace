@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Portfolio Website",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
