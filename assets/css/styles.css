@@ -30,6 +30,7 @@ selector {
   
   /* CSS Resets */
   * {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -133,6 +134,7 @@ nav ul li {
   }
   .skill-header{
     color: var(--primary-color);
+    left: 5%;
   }
   .my-projects{
     color: var(--primary-color);
@@ -154,12 +156,12 @@ nav ul li {
   bottom: 50%;
 }
 .socialicon {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
 }
 .scroll-to-top {
   position: fixed;
-  right: 0.5%;
+  right: 1%;
   bottom: 3%;
   cursor: pointer;
 }
@@ -167,4 +169,9 @@ nav ul li {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+}
+.bio{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: var(--bold-font);
+  color: var(--secondary-shadow)
 }
