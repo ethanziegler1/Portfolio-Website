@@ -54,7 +54,12 @@ a:hover {
 body {
   font-family: var(--font-family);
 }
-
+h1{
+  font-family: 'Courier New', Courier, monospace;
+}
+.nav ul li{
+  font-family: 'Courier New', Courier, monospace;
+}
 nav {
   position: sticky;
   top: 0;
@@ -89,6 +94,7 @@ nav ul {
 
 nav ul li {
   font-weight: var(--bold-font);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .burger-menu {
@@ -202,22 +208,21 @@ textarea{
   gap: 5rem;
   display: flex;
 }
-.socials:hover{
-  
-}
 
 .socialicon {
   width: 4rem;
   height: 4rem;
+  justify-content: space-between;
 }
 
 .scroll-to-top {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   cursor: pointer;
   right: 1%;
-  bottom: 3.9%;
+  bottom: 2%;
 }
 
 .up-arrow {
