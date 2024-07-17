@@ -1,201 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/EZ.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Ethan Ziegler Web Dev Portfolio</title>
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav>
-        <h1>Ethan Ziegler</h1>
-        <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-  </nav>
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <div class="bio animate__animated animate__bounceInUp">
-          <h2 class="bio-title">About Me</h2>
-          <p class="bio-text">
-            I'm Ethan Ziegler, an aspiring web developer with my Bachelors of Science in Computer Science from Towson University!
-          </p>
-        </div>
-  </section>
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-        <h2 class="skill-header">My Top Skills</h2>
-  
-        <div class="skills-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <img
-              src="assets/icons/icons8-html-5.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/icons8-css3.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/icons8-javascript.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/java.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-        </div>
-      </section>
-    <!-- Projects section -->
-<section class="projects" id="projects">
-    <h2 class="my-projects" id="my-projects">My Projects</h2>
-    <div class="project-labels-list">
-      <h3 class="fitnessformulaheader">Fitness Formula</h3>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Ziegler Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+      
+    </header>
+    <main>
+      <section class="section sec2 about" id="about"></section>
+      <section class="section sec3 projects" id="projects"></section>
+      <section class="section sec4 skills" id="skills"></section>
+      <section class="section sec5 contact" id="contact"></section>
+    </main>
     
-    <div class="projects-list" id="projects-list">
-        <img 
-        src="assets/images/fitnessformulasample.png" 
-        alt=""
-        loading="lazy"
-        class="project-card"
-        />
-    
-    </div>
-</section>
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div>
+    <div class="controls">
+      <div class="control control-1 active-btn" data-id="home">
+        <i class="fa fa-home" aria-hidden="true"></i>
       </div>
-    </section>
-    <!-- Social accounts - Fixed to the right -->
-    <section class="socials-wrapper">
-    <div class="socials">
-        <a href="https://www.linkedin.com/in/ethan-ziegler-a0ab27208/" target="_blank"
-          ><img
-            src="assets/icons/icons8-linkedin-circled.gif"
-            alt="Linkedin"
-            loading="lazy"
-            class="socialicon"
-            id="linked-in"
-        /></a>
-        <a href="https://github.com/ethanziegler1" target="_blank"
-          ><img 
-            src="assets/icons/icons8-github.gif" 
-            alt="Github" 
-            loading="lazy"
-            class="socialicon"
-        /></a>
+      <div class="control control-2" data-id="about">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </div>
+      <div class="control control-3" data-id="projects">
+        <i class="fa-solid fa-newspaper"></i>
+      </div> 
+      <div class="control control-4" data-id="skills">
+        <i class="fa fa-cogs" aria-hidden="true"></i>
+      </div>
+      <div class="control control-5" data-id="contact">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
     </div>
-</section>
-      <!-- Scroll to top -->
-<i class="scroll-to-top" id="scroll-to-top">
-  <img 
-  src="assets/icons/icons8-upward-arrow.gif" 
-  alt="to-top"
-  class="up-arrow">
-</i>
-    <!-- Footer section -->
-<section class="footer" id="footer">
-    <div>
-        
-    </div>
-</section>
-    <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+</body>
 </html>
