@@ -20,7 +20,10 @@
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
   background-color: var(--color-grey-4);
   font-size: 1.1rem;
   color: var(--color-white);
@@ -82,7 +85,6 @@ section {
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  color: var(--color-grey-5);
 }
 
 .active {
@@ -136,25 +138,166 @@ section {
 }
 
 .header-content {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
+  text-align: center;
 }
-.header-content .name-plate {
+.header-content h2 {
   transition: all 0.4s ease-in-out;
-  justify-content: center;
-  text-align: left;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-stretch: ultra-expanded;
 }
-.header-content .title {
-  padding-top: 5rem;
-  font-size: 1rem;
-}
-.header-content .title:hover {
+.header-content h2:hover {
   font-size: 5rem;
 }
+.header-content h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  color: var(--color-grey-4);
+  font-size: 3rem;
+  font-stretch: extra-expanded;
+}
 
-.contact .contact-me {
+.about-title {
+  text-align: center;
+}
+.about-title h2 {
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-stretch: ultra-expanded;
+}
+.about-title h2:hover {
+  font-size: 5rem;
+}
+.about-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  color: var(--color-grey-4);
+  font-size: 3rem;
+  font-stretch: extra-expanded;
+}
+
+.projects-title {
+  text-align: center;
+}
+.projects-title h2 {
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-stretch: ultra-expanded;
+}
+.projects-title h2:hover {
+  font-size: 5rem;
+}
+.projects-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  color: var(--color-grey-4);
+  font-size: 3rem;
+  font-stretch: extra-expanded;
+}
+
+.skills-title {
+  text-align: center;
+}
+.skills-title h2 {
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-stretch: ultra-expanded;
+}
+.skills-title h2:hover {
+  font-size: 5rem;
+}
+.skills-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  color: var(--color-grey-4);
+  font-size: 3rem;
+  font-stretch: extra-expanded;
+}
+
+.contact-title {
+  text-align: center;
+}
+.contact-title h2 {
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-stretch: ultra-expanded;
+}
+.contact-title h2:hover {
+  font-size: 5rem;
+}
+.contact-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  color: var(--color-grey-4);
+  font-size: 3rem;
+  font-stretch: extra-expanded;
+}
+
+.lightdark {
+  position: absolute;
+  z-index: 10;
+  top: 5%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.lightdark .button {
+  position: absolute;
+  opacity: 0;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-grey-4);
+  width: 55;
+  height: 55;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: 0 3px 15px var(--color-grey-5);
+}
+.lightdark .button i {
+  font-size: 1.2rem;
   color: var(--color-grey-1);
+  pointer-events: none;
+}
+.lightdark .active-ld-button {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
