@@ -16,19 +16,89 @@
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
+    --pad: max(20px, 4vmin);
   }
-  
+
+html {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+main,canvas {
+    display: block
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: inherit;
+    font-size: inherit
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+ol,ul {
+    list-style: none
+}
   body{
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
+    font-family: "Source Code Pro";
     font-weight: 100;
     font-style: normal;
     background-color: var(--color-grey-4);
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all .4s ease-in-out;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none
   }
-  
+  .frame {
+    position: absolute;
+    z-index: 10;
+    left: 2%;
+    right: 2%;
+    top: 2%;
+    bottom: 2%;
+    mix-blend-mode: difference;
+    pointer-events: none
+}
+
+.frame_line {
+    position: absolute;
+    background-color: #fff;
+    opacity: .5
+}
+
+.frame_line-left {
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%
+}
+
+.frame_line-right {
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%
+}
+
+.frame_line-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px
+}
+
+.frame_line-bottom {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px
+}
   a{
     display: inline-block;
     text-decoration: none;
@@ -43,8 +113,9 @@
   }
   
   section{
-    min-height: 100vh;
+    display: none;
     width: 100%;
+    min-height: 100vh;
     position: absolute;
     left: 0;
     top:0;
@@ -133,17 +204,15 @@
     }
   }
 
-.header-content{
+
+.title{
+  margin:  0 3rem;
   text-align:center;
   h2{
-    &:hover{
-      font-size: 5rem;
-    }
     transition: all .4s ease-in-out;
-    position: absolute;
+    position: fixed;
     text-transform: uppercase;
     font-size: 2.5rem;
-    font-stretch:ultra-expanded;
     .bg-text{
       position:absolute;
       top:50%;
@@ -159,129 +228,35 @@
     }
   }
 }
-
-.about-title{
-  text-align:center;
-  h2{
-    &:hover{
-      font-size: 5rem;
-    }
-    transition: all .4s ease-in-out;
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-stretch:ultra-expanded;
-    .bg-text{
-      position:absolute;
-      top:50%;
-      left:50%;
-      transition: all .4s ease-in-out;
-      z-index: -1;
-      transform: translate(-50%,-50%);
-      width: 200%;
-      color: var(--color-grey-4);
-      font-size: 3rem;
-      font-stretch: extra-expanded;
-
-    }
+.home {
+  position: absolute;
+  right: 3%;
+  bottom: 50%;
+  line-height: 1.5;
+  span {
+    display: block
   }
 }
 
-.projects-title{
-  text-align:center;
-  h2{
-    &:hover{
-      font-size: 5rem;
-    }
-    transition: all .4s ease-in-out;
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-stretch:ultra-expanded;
-    .bg-text{
-      position:absolute;
-      top:50%;
-      left:50%;
-      transition: all .4s ease-in-out;
-      z-index: -1;
-      transform: translate(-50%,-50%);
-      width: 200%;
-      color: var(--color-grey-4);
-      font-size: 3rem;
-      font-stretch: extra-expanded;
-
-    }
-  }
-}
-
-.skills-title{
-  text-align:center;
-  h2{
-    &:hover{
-      font-size: 5rem;
-    }
-    transition: all .4s ease-in-out;
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-stretch:ultra-expanded;
-    .bg-text{
-      position:absolute;
-      top:50%;
-      left:50%;
-      transition: all .4s ease-in-out;
-      z-index: -1;
-      transform: translate(-50%,-50%);
-      width: 200%;
-      color: var(--color-grey-4);
-      font-size: 3rem;
-      font-stretch: extra-expanded;
-
-    }
-  }
-}
-
-.contact-title{
-  text-align:center;
-  h2{
-    &:hover{
-      font-size: 5rem;
-    }
-    transition: all .4s ease-in-out;
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-stretch:ultra-expanded;
-    .bg-text{
-      position:absolute;
-      top:50%;
-      left:50%;
-      transition: all .4s ease-in-out;
-      z-index: -1;
-      transform: translate(-50%,-50%);
-      width: 200%;
-      color: var(--color-grey-4);
-      font-size: 3rem;
-      font-stretch: extra-expanded;
-
-    }
-  }
-}
-
+//light and dark mode button
 .lightdark{
-  position:absolute;
+  position:fixed;
   z-index: 10;
-  top: 5%;
+  bottom: 3%;
   right: 3%;
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-  
+  .active-btn{
+      background-color: var(--color-secondary) !important;
+      transition: all .4s ease-in-out;
+      i{
+          color: var(--color-white) !important;
+      }    
+  }
   .button{
-      position: absolute;
-      opacity: 0;
       padding: 1rem;
       cursor: pointer;
       background-color: var(--color-grey-4);
@@ -291,16 +266,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin:  .7rem 0;
+      margin:  0 .3rem;
       box-shadow: 0 3px 15px var(--color-grey-5) ;
       i{
           font-size: 1.2rem;
           color: var(--color-grey-1);
           pointer-events: none;
       }
-  }
-  .active-ld-button{
-    opacity: 1;
   }
 }
 
