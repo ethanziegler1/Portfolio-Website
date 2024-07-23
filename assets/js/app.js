@@ -1,17 +1,18 @@
 const sections = document.querySelectorAll('.section');
-const buttonContainer = document.querySelectorAll('.controls');
-const sectionBtn = document.querySelectorAll('.control');
+const buttonContainer = document.querySelectorAll('.nav-btn-container');
+const sectionBtn = document.querySelectorAll('.nav-btn');
 const allSections = document.querySelectorAll('.main-content');
 const ldButton = document.querySelectorAll('.ld-button');
 const ldBtn = document.querySelectorAll('.ld-btn')
+
 
 function PageTransitions(){
     //Button click active class
     for (let i = 0; i < sectionBtn.length; i++) {
         sectionBtn[i].addEventListener('click', function(){
-            let currBtn = document.querySelectorAll('.active-btn');
-            currBtn[0].className = currBtn[0].className.replace('active-btn', '')
-            this.className += ' active-btn'
+            let currBtn = document.querySelectorAll('.active-nav-btn');
+            currBtn[0].className = currBtn[0].className.replace('active-nav-btn', '')
+            this.className += ' active-nav-btn'
         })
     }
 
