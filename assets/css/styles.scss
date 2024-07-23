@@ -47,6 +47,8 @@ ol, ul {
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
   .page-content{
+    background-color: var(--color-primary);
+    box-shadow: var(--color-grey-3) 0px 0px 15px 0px;
     color:#000;
     span{
       font-weight: bold;
@@ -59,6 +61,7 @@ ol, ul {
       transition: all .4s ease-in-out;
       .bg-text{
         color: var(--color-grey-3);
+        opacity: .2;
       }
     }
   }
@@ -200,7 +203,7 @@ section{
       background-color: var(--color-secondary) !important;
       transition: all .4s ease-in-out;
       i{
-          color: var(--color-white) !important;
+          color: var(--color-primary) !important;
       }    
   }
   .nav-btn{
@@ -244,6 +247,7 @@ section{
       color: var(--color-grey-4);
       font-size: 3rem;
       font-stretch: extra-expanded;
+      opacity: .5;
     }
   }
 }
@@ -307,7 +311,6 @@ section{
       margin:  .7rem 1rem;
       box-shadow: 0 3px 15px var(--color-grey-5) ;
       .ld-btn{
-
           font-size: 1.2rem;
           color: white;
           pointer-events: none;
