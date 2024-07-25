@@ -292,6 +292,7 @@ section {
 .page-content .question {
   font-size: 1;
   font-weight: bold;
+  text-decoration: underline;
   @media screen and (max-width: 768px) {
     font-size: 2vw;
     max-width: 90vw;
@@ -314,17 +315,12 @@ section {
 .projects-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Align project titles to the left */
+  justify-content: center; /* Align project titles to the left */
   align-items: center;
   padding: 2vh 2vw;
 }
 
 .project-name{
-  display: block;
-  align-items: left;
-  text-align: left;
-  justify-content: left;
-  padding: 2vh 4vw;
   text-decoration: underline;
 }
 
