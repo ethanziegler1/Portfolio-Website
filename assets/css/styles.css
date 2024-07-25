@@ -311,6 +311,36 @@ section {
   margin-bottom: -2vh;
 }
 
+.projects-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align project titles to the left */
+  align-items: center;
+  padding: 2vh 2vw;
+}
+
+.project-name{
+  display: block;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+  padding: 2vh 4vw;
+  text-decoration: underline;
+}
+
+.project-desc{
+  margin-bottom: 3vh;
+  font-size: 1.2vw;
+  @media screen and (max-width: 768px) {
+    font-size: 1.9vw;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+}
+.projectdesc2{
+  margin-bottom: -2vh;
+}
+
 .lightdark {
   position: absolute;
   z-index: 10;
