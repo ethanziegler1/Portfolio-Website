@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  transition: all 0.4s ease-in-out;
 }
 
 :root {
@@ -293,7 +294,9 @@ section {
 }
 /* About Me */
 .aboutme{
-  font-size: 1.5dvw;
+  font-size: 1dvw;
+  max-height: 60dvh;
+  max-width: 50dvw;
   @media screen and (max-width: 768px) {
     font-size: 2.5vw;
     max-width: 90dvw;
@@ -314,8 +317,13 @@ section {
 }
 .qna{
   padding: 2dvh 2dvw;
+  top: 10dvh;
   display: block;
-  overflow-y: auto;
+  overflow-y: none;
+  max-height: 60dvh;
+  @media screen and (max-width: 768px) {
+    top: 0dvh
+  }
 }
 
 .page-content .question {
@@ -323,18 +331,14 @@ section {
   font-weight: bold;
   text-decoration: underline;
   @media screen and (max-width: 768px) {
-    font-size: 2dvw;
-    max-width: 90vw;
-    max-height: 90vw;
+    font-size: 3dvw;
   }
 }
 .page-content .answer {
   margin-bottom: 1.5vh;
   font-size: 1.2vw;
   @media screen and (max-width: 768px) {
-    font-size: 2.2vw;
-    max-width: 90vw;
-    max-height: 90vh;
+    font-size: 2.5vw;
   }
 }
 .page-content .a-3{
@@ -362,6 +366,12 @@ section {
   align-items: center;
   scroll-behavior: smooth;
   overflow-y: auto;
+  max-height: 50dvh;
+  right: -30dvw;
+  @media screen and (max-width: 768px) {
+    max-height: 80vh;
+    right: -15dvw;
+  }
 }
 
 .project-name{
@@ -419,7 +429,6 @@ section {
   height: 15px;
   background-color: #272c30;
   border-radius: 20px;
-
 }
 
 .active-bar {
@@ -427,6 +436,38 @@ section {
   height: 100%;
   width: auto;
   border-radius: 20px;
+}
+
+/* Contact */
+.contact .page-content{
+  @media screen and (max-width: 768px) {
+    right: -31dvw;
+    max-width: 60vw;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+.contact-links{
+  display: flex;
+  position:relative;
+  flex-direction: column;
+  align-items:center;
+  font-size: 2dvw;
+  @media screen and (max-width: 768px) {
+    font-size: 5dvw;
+  }
+}
+
+.contact-links a {
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-grey-2);
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: var(--color-grey-1);
+}
+.contact-links a:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 /* Light/Dark Mode Button */
