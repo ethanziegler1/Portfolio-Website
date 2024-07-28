@@ -101,7 +101,7 @@ ul {
   width: 90vw;
   height: 90vh;
   transform: translate(-50%, -50%);
-  transition: none !important;
+  transition: none;
 }
 
 body {
