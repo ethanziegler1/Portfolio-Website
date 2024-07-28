@@ -505,6 +505,7 @@ section {
   top: 50vh;
   left: 11vw;
   display: flex;
+  padding: 1dvh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -520,8 +521,9 @@ section {
 }
 
 .nav-btn-container .nav-btn {
-  border-radius: var(--pad);
-  padding: 1vh;
+  cursor: pointer;
+  border-radius: 1dvh;
+  padding: 2dvh;
   display: flex;
   justify-content: center;
   align-items: center;
