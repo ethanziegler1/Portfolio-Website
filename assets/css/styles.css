@@ -365,7 +365,7 @@ section {
 }
 
 .qna {
-  padding: 2dvh 2dvw;
+  padding: var(--pad);
   top: 10dvh;
   display: block;
   overflow-y: none;
@@ -377,7 +377,7 @@ section {
 }
 
 .page-content .question {
-  font-size: 1;
+  font-size: 1dvw;
   font-weight: bold;
   text-decoration: underline;
 
@@ -395,9 +395,6 @@ section {
   }
 }
 
-.page-content .a-3 {
-  margin-bottom: -2vh;
-}
 
 /* Projects */
 .projects-title {
@@ -425,7 +422,6 @@ section {
   overflow-y: auto;
   max-height: 50dvh;
   right: -30dvw;
-
   @media screen and (max-width: 768px) {
     max-height: 80vh;
     right: -15dvw;
@@ -435,6 +431,7 @@ section {
 .project-name {
   text-decoration: underline;
   text-align: right;
+  align-items: right;
 }
 
 .project-name:hover {
@@ -446,16 +443,27 @@ section {
   text-align: right;
   margin-bottom: 3vh;
   font-size: 1.2vw;
-
   @media screen and (max-width: 768px) {
     font-size: 1.9vw;
     max-width: 90vw;
     max-height: 90vh;
   }
 }
-
 .projectdesc2 {
   margin-bottom: -2vh;
+}
+.project-item{
+  align-items: right;
+  text-align:end;
+  border-radius: 2dvh;
+  padding: 1dvh 1dvw;
+}
+
+.project-item:hover {
+  transform: scale(1.1);
+  background-color: var(--color-grey-6);
+  transition: transform .2s ease-in-out;
+  color:var(--color-white)
 }
 
 /*Skills*/
