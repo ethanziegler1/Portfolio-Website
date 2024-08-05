@@ -9,7 +9,7 @@
 :root {
   --color-primary: #0c0e14;
   --color-secondary: #135f9e;
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -63,7 +63,7 @@ ul {
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
+  --color-primary: #ffffff;
   --color-secondary: #135f9e;
   --color-white: #454e56;
   --color-black: #000;
@@ -112,7 +112,7 @@ body {
   background-color: var(--color-primary);
   font-size: 1.1rem;
   color: var(--color-white);
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +188,7 @@ section {
   left: 0;
   top: 0;
   transform: translateY(-100%);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .sec1 {
@@ -251,7 +251,7 @@ section {
   align-items: center;
   /* Center vertically */
   text-align: center;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -293,7 +293,7 @@ section {
 
 .title {
   position: absolute;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   top: 20dvh;
   right: 30dvw;
 
@@ -324,7 +324,7 @@ section {
   /* Use Flexbox for internal content alignment */
   font-weight: 500;
   text-align: left;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   max-width: 30dvw;
   max-height: 30dvh;
   line-height: 1.5;
@@ -354,7 +354,7 @@ section {
 .qna-title {
   position: flex;
   display: flexbox;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   top: 20dvh;
   right: 30dvw;
 
@@ -372,7 +372,7 @@ section {
   max-height: 60dvh;
 
   @media screen and (max-width: 768px) {
-    top: 0dvh
+    top: 0dvh;
   }
 }
 
@@ -395,12 +395,11 @@ section {
   }
 }
 
-
 /* Projects */
 .projects-title {
   position: absolute;
   display: block;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   top: 20dvh;
   right: 30dvw;
   overflow-y: scroll;
@@ -423,7 +422,6 @@ section {
   max-height: 50dvh;
   right: -30dvw;
   @media screen and (max-width: 768px) {
-    max-height: 80vh;
     right: -15dvw;
   }
 }
@@ -452,9 +450,9 @@ section {
 .projectdesc2 {
   margin-bottom: -2vh;
 }
-.project-item{
+.project-item {
   align-items: right;
-  text-align:end;
+  text-align: end;
   border-radius: 2dvh;
   padding: 1dvh 1dvw;
 }
@@ -462,15 +460,15 @@ section {
 .project-item:hover {
   transform: scale(1.1);
   background-color: var(--color-grey-6);
-  transition: transform .2s ease-in-out;
-  color:var(--color-white)
+  transition: transform 0.2s ease-in-out;
+  color: var(--color-white);
 }
 
 /*Skills*/
 .skills-title {
   position: absolute;
   display: block;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   top: 30dvh;
   right: 53dvw;
 
