@@ -215,6 +215,10 @@ section {
   display: none;
   transform: translateY(0) scale(1);
 }
+.sec6 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
 
 .active {
   display: flex;
@@ -505,6 +509,59 @@ section {
   height: 100%;
   width: auto;
   border-radius: 20px;
+}
+
+/* Technologies */
+.technologies-list {
+  top: 10%;
+  width: 50%;
+  height: 60%;
+  max-height: 50%;
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  grid-template-rows: repeat(
+    2,
+    1fr
+  ); /* Create 2 rows *
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 5vh;
+}
+
+.technology-item {
+  font-size: 6dvw; /* Adjust the icon size as needed */
+  text-align: center;
+}
+
+.technology-item:hover {
+  transition: none;
+  font-size: 7dvw; /* Adjust the icon size as needed */
+  text-align: center;
+  color: var(--color-grey-5);
+}
+
+@media screen and (max-width: 768px) {
+  .technologies-list {
+    height: 60%;
+    max-height: 60%;
+    top: 5%;
+    left: 20%;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Create 2 columns for smaller screens */
+    grid-template-rows: repeat(3, 1fr); /* Create 3 rows for smaller screens */
+  }
+  .technology-item {
+    font-size: 15dvw;
+  }
+  .technology-item:hover {
+    transition: none;
+    font-size: 20dvw; /* Adjust the icon size as needed */
+    text-align: center;
+    color: var(--color-grey-1);
+  }
 }
 
 /* Contact */
